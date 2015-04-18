@@ -1,0 +1,1 @@
+docker create --name=mymail doucol/mymail:latest

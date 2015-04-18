@@ -11,6 +11,8 @@ RUN apt-get update && \
     mailutils \
     supervisor
 
+RUN sed -i -re"s/#submission inet n(\ )+-(\ )+-(\ )+-(\ )+-(\ )+smtpd/submission inet n       -       -       -       -       smtpd/g" /etc/postfix/master.cf
+
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 25
