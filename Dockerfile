@@ -13,4 +13,7 @@ RUN apt-get update && \
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+EXPOSE 25
+EXPOSE 995
+
 CMD ["/usr/bin/supervisord"]
