@@ -7,7 +7,6 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   apt-get install -y \
     postfix \
-    dovecot-common \ 
     dovecot-pop3d \
     mailutils \
     supervisor
