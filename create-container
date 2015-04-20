@@ -1,1 +1,1 @@
-docker create --name=mymail doucol/mymail:latest
+docker create --publish=0.0.0.0:25:25 --name=mymail doucol/mymail:latest
